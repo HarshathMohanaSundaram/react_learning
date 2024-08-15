@@ -1,3 +1,5 @@
+import logo from '../assets/react-core-concepts.png'
+
 function Header() {
   const reactDescription = ['Fundamental', 'Crucial', 'Core']
 
@@ -7,7 +9,7 @@ function Header() {
   
   return (
     <header>
-      <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+      <img src={logo} alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
         {description} React concepts you will need for almost any app you are
