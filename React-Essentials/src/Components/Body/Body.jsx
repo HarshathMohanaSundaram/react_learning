@@ -39,7 +39,7 @@ function Body() {
         <h2>Examples</h2>
         <menu>
           {Object.keys(EXAMPLES).map((label) => (
-            <TabButton handleClick={() => handleClick(label)}>
+            <TabButton isActive={label===selectedTab} handleClick={() => handleClick(label)}>
               {EXAMPLES[label].title}
             </TabButton>
           ))}
