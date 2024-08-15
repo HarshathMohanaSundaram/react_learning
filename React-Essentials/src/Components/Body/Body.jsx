@@ -30,16 +30,16 @@ function Body() {
       <section id="core-concepts">
         <h2>Core Concepts</h2>
         <ul>
-          {CORE_CONCEPTS.map((concept) => (
-            <CoreConcept {...concept} />
+          {CORE_CONCEPTS.map((concept, index) => (
+            <CoreConcept key={index} {...concept} />
           ))}
         </ul>
       </section>
       <section id="examples">
         <h2>Examples</h2>
         <menu>
-          {Object.keys(EXAMPLES).map((label) => (
-            <TabButton isActive={label===selectedTab} handleClick={() => handleClick(label)}>
+          {Object.keys(EXAMPLES).map((label, index) => (
+            <TabButton key={index} isActive={label===selectedTab} handleClick={() => handleClick(label)}>
               {EXAMPLES[label].title}
             </TabButton>
           ))}
