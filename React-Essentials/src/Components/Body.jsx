@@ -1,5 +1,6 @@
 import CoreConcept from './CoreConcept';
 import { CORE_CONCEPTS } from "../data";
+import './Body.css';
 
 function Body() {
   return (
