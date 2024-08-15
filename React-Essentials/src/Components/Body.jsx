@@ -1,7 +1,17 @@
+import CoreConcept from './CoreConcept';
+import { CORE_CONCEPTS } from "../data";
+
 function Body() {
   return (
     <main>
-      <h2>Time to get started!</h2>
+      <section id="core-concepts">
+        <h2>Core Concepts</h2>
+        <ul>
+          {
+            CORE_CONCEPTS.map( (concept) => <CoreConcept {...concept} />)
+          }
+        </ul>
+      </section>
     </main>
   );
 }
