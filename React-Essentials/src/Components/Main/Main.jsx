@@ -3,7 +3,6 @@ import CoreConcepts from "../CoreConcepts";
 import Examples from "../Examples";
 
 function Main() {
-  
   return (
     <main>
      <CoreConcepts />
@@ -12,4 +11,4 @@ function Main() {
   );
 }
 
-export default Body;
+export default Main;
